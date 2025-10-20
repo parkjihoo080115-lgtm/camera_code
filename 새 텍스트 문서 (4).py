@@ -10,9 +10,9 @@ import time
 # 1. Tapo 앱에서 RTSP 기능을 활성화하고, 별도의 '장치 계정'(Username/Password)을 생성해야 합니다.
 #    (이 계정은 Tapo 로그인 계정과 다릅니다!)
 # 2. 아래 변수들을 사용자 환경에 맞게 변경하세요.
-TAPO_USER = 'gijeph'   # Tapo 앱에서 만든 카메라 장치 계정 ID
-TAPO_PASS = 'qwertyuiop0'   # 위 계정 비밀번호
-TAPO_IP = '192.168.219.113'   # 라우터에서 확인한 카메라 IP (예: 192.168.1.100)
+TAPO_USER = 'name'   # Tapo 앱에서 만든 카메라 장치 계정 ID
+TAPO_PASS = 'key'   # 위 계정 비밀번호
+TAPO_IP = 'IP'   # 라우터에서 확인한 카메라 IP (예: 192.168.1.100)
 STREAM = 'stream1'       # 'stream1' (고화질) 또는 'stream2' (저화질)
 RTSP_PORT = 554          # Tapo 기본 포트
 
@@ -198,3 +198,4 @@ if out is not None:
     out.release()
     print(f"\n✨ 저장 완료! 감지 영상이 다음 위치에 저장되었습니다: {OUTPUT_PATH}")
 cv2.destroyAllWindows()
+
